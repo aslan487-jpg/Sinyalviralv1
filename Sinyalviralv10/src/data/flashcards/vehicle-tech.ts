@@ -1,0 +1,39 @@
+import type { Flashcard } from "../types";
+
+export const vehicleTechCards: Flashcard[] = [
+  // ══ SAYFA 1 KARTLARI ══
+  { id: "vt-001", categoryId: "vehicle-tech", title: "Lastik Basıncı", content: "SOĞUKKEN kontrol et. Doğru değer kapı iç kısmında yazar. Diş derinliği min 1.6mm.", tip: "Soğuk kontrol, min 1.6mm diş", difficulty: 1 },
+  { id: "vt-002", categoryId: "vehicle-tech", title: "Motor Yağı", content: "Motor SOĞUKKEN, düz zeminde kontrol et. Çubuğu sil, daldır, min-max arası olmalı.", tip: "Soğuk motor + düz zemin", difficulty: 1 },
+  { id: "vt-003", categoryId: "vehicle-tech", title: "ABS Sistemi", content: "Sert frende tekerleklerin kilitlenmesini önler. Pedal titrer = normal! Tam ve sürekli basılı tut, pompalama!", tip: "Kilit yok = Direksiyon çalışır", difficulty: 2 },
+  { id: "vt-004", categoryId: "vehicle-tech", title: "ESP/ESC Sistemi", content: "Kayma algılar, otomatik fren + motor müdahalesi ile dengeyi korur.", tip: "Kayma önler, denge sağlar", difficulty: 2 },
+  { id: "vt-005", categoryId: "vehicle-tech", title: "Fren Hidroliği", content: "Seviye min-max arası olmalı. Düşükse: balata aşınmış veya sistem kaçırıyor olabilir.", tip: "Düşük = Balata veya kaçak!", difficulty: 2 },
+  { id: "vt-006", categoryId: "vehicle-tech", title: "Soğutma Sistemi", content: "Antifriz seviyesi genleşme kabında kontrol edilir. Motor SICAKKEN kapak AÇILMAZ!", tip: "Sıcak motor = Kapak AÇMA!", difficulty: 2 },
+  { id: "vt-007", categoryId: "vehicle-tech", title: "4 Zamanlı Motor", content: "Emme → Sıkıştırma → Ateşleme → Egzoz. Güç üreten tek zaman = 3. zaman (ateşleme).", tip: "E-S-A-E, güç=3.zaman", difficulty: 2 },
+  { id: "vt-008", categoryId: "vehicle-tech", title: "Gösterge Paneli", content: "Kırmızı = TEHLİKE (dur!). Sarı = UYARI (servise git). Yeşil = BİLGİ. Mavi = uzun far.", tip: "Kırmızı=dur, Sarı=servis", difficulty: 1 },
+  { id: "vt-009", categoryId: "vehicle-tech", title: "Akü Takviye", content: "Önce kırmızı (+) bağla, sonra siyah (-). Siyah kablo boş akünün (-) kutbuna değil, KÜTLEYE bağlanır!", tip: "Tak: +önce. Sök: -önce.", difficulty: 2 },
+  { id: "vt-010", categoryId: "vehicle-tech", title: "Egzoz Duman Renkleri", content: "Görünmez = normal. Beyaz = su buharı. Mavi = yağ yakıyor. Siyah = fazla yakıt.", tip: "Mavi=yağ, Siyah=yakıt sorunu", difficulty: 2 },
+  { id: "vt-011", categoryId: "vehicle-tech", title: "Motor Türleri", content: "İçten yanmalı: yakıt silindir içinde yanar. Elektrik motoru: sıfır emisyon. Hibrit: motor + elektrik birlikte.", tip: "İçten yanmalı = silindir İÇİNDE yanar", difficulty: 1 },
+  { id: "vt-012", categoryId: "vehicle-tech", title: "Benzin vs Dizel Motor", content: "Benzin: buji ile kıvılcımla ateşlenir. Dizel: sıkıştırma ısısıyla tutuşur (bujisiz), güçlü tork.", tip: "Benzin=buji, Dizel=sıkıştırma", difficulty: 2 },
+  { id: "vt-013", categoryId: "vehicle-tech", title: "Yağlama Sistemi", content: "Yağ karteri → yağ pompası → yağ filtresi → motor parçaları. Yağ lambası yanarsa: HEMEN dur, motoru kapat!", tip: "Yağ lambası = DUR + kapat!", difficulty: 1 },
+  { id: "vt-014", categoryId: "vehicle-tech", title: "Sigorta Kuralı", content: "Yanan sigortanın yerine AYNI amper değerinde sigorta takılır. Daha yüksek amperli = kablo yanar, yangın!", tip: "Aynı amper = güvenli", difficulty: 1 },
+  { id: "vt-015", categoryId: "vehicle-tech", title: "Debriyaj (Kavrama)", content: "Motor ile şanzımanı bağlar veya ayırır. Sol pedal (manuel). Kayma hissedilirse değiştirilmeli.", tip: "Sol pedal = debriyaj", difficulty: 2 },
+  { id: "vt-016", categoryId: "vehicle-tech", title: "Diferansiyel", content: "Virajlarda iç ve dış tekerleklerin farklı hızlarda dönmesini sağlar.", tip: "Viraj = farklı tekerlek hızı", difficulty: 2 },
+  // ══ SAYFA 2 YENİ KARTLARI ══
+  { id: "vt-017", categoryId: "vehicle-tech", title: "Fren Türleri", content: "Hidrolik fren: pedal + fren sıvısı. Disk fren: disk üzerine balata (ön teker). Kampana fren: arka teker. El freni: park halinde, arka tekerleklere.", tip: "El freni = ARKA tekerlekler", difficulty: 2 },
+  { id: "vt-018", categoryId: "vehicle-tech", title: "Motor Freni", content: "Uzun inişlerde gaz kes + düşük vites. Sürekli fren pedalı basma! Balata aşırı ısınır, fren kaybolur (fren tutmazlığı).", tip: "İniş = motor freni, pedala basma", difficulty: 2 },
+  { id: "vt-019", categoryId: "vehicle-tech", title: "Direksiyon Sistemi", content: "Mekanik: ağır. Hidrolik servo: pompa yardımı. Elektrikli (EPS): modern, yakıt tasarruflu. Araç yana çekerse: lastik veya rot ayarı.", tip: "Yana çekme = lastik/rot kontrol", difficulty: 2 },
+  { id: "vt-020", categoryId: "vehicle-tech", title: "Amortisör", content: "Yayın titreşimini söndürür. Bozulursa: aşırı zıplama, virajda yatma, düzensiz lastik aşınması. Yol tutuşu azalır!", tip: "Amortisör bozuk = aşırı zıplama", difficulty: 2 },
+  { id: "vt-021", categoryId: "vehicle-tech", title: "Lastik Basınç Hataları", content: "Düşük basınç: ısınma, yakıt ↑, yandan aşınma, patlama riski. Yüksek basınç: tutuş ↓, ortadan aşınma. Doğru basınç: güvenli sürüş.", tip: "Düşük=patlama, Yüksek=tutuş yok", difficulty: 2 },
+  { id: "vt-022", categoryId: "vehicle-tech", title: "Lastik Patlaması", content: "Ani fren YAPMA, direksiyon sert çevirme! Gaz yavaşça kes, direksiyonu düz tut, kademeli yavaşlat.", tip: "Patlama → gaz kes, fren basma!", difficulty: 1 },
+  { id: "vt-023", categoryId: "vehicle-tech", title: "Pasif vs Aktif Güvenlik", content: "Pasif: kaza olunca korur (kemer, airbag). Aktif: kazayı önler (ABS, ESP, LDW, AEB). Airbag = pasif, ESP = aktif.", tip: "Airbag=pasif, ESP=aktif", difficulty: 2 },
+  { id: "vt-024", categoryId: "vehicle-tech", title: "Araç Muayene Süreleri", content: "0-3 yaş: 4 yılda bir. 4+ yaş: 2 yılda bir. Ticari/kamyon/otobüs: yılda bir. Muayenesiz araç = ceza + men.", tip: "4+ yaş = 2 yılda bir", difficulty: 2 },
+  { id: "vt-025", categoryId: "vehicle-tech", title: "Periyodik Bakım", content: "Motor yağı: 10-15 bin km. Fren sıvısı: 2 yılda bir. Antifriz: 2 yılda bir. Akü: 3-5 yılda bir kontrol.", tip: "Fren sıvısı+antifriz = 2 yılda", difficulty: 2 },
+  // ══ SAYFA 3 YENİ KARTLARI ══
+  { id: "vt-026", categoryId: "vehicle-tech", title: "Ekonomik Sürüş", content: "Erken vites al, sabit hızda git, öngörülü fren yap, 30sn+ bekleme = motoru kapat, lastik basıncını kontrol et.", tip: "Sabit hız + erken vites = tasarruf", difficulty: 1 },
+  { id: "vt-027", categoryId: "vehicle-tech", title: "Yanlış Yakıt", content: "Dizel araca benzin veya benzinli araca dizel doldurmak motoru ciddi şekilde bozar. Hemen durdur, yakıt boşalt!", tip: "Yanlış yakıt = hemen durdur!", difficulty: 1 },
+  { id: "vt-028", categoryId: "vehicle-tech", title: "Zorunlu Araç Ekipmanları", content: "Yangın söndürücü (1), reflektif üçgen (2 adet!), ilk yardım çantası (1), stepne, kriko, çekme halatı, somun anahtarı.", tip: "Üçgen = 2 adet! Söndürücü = zorunlu!", difficulty: 1 },
+  { id: "vt-029", categoryId: "vehicle-tech", title: "Yük Taşıma Kuralları", content: "Yük öne max 1/3, arkaya max 1/2 taşabilir. Taşma durumunda reflektörlü kırmızı uyarı levhası takılır. Azami yükseklik: 4 m.", tip: "Öne 1/3, Arkaya 1/2, Yükseklik 4m", difficulty: 2 },
+  { id: "vt-030", categoryId: "vehicle-tech", title: "Römork Hız Sınırları", content: "Römork çekerken: şehir içi 50, şehirlerarası 70, bölünmüş yol/otoyol 80 km/s. Normal otomobilden düşük!", tip: "Römork otoyolda = 80 km/s", difficulty: 2 },
+  { id: "vt-031", categoryId: "vehicle-tech", title: "Yangın Söndürücü PASS", content: "Pimi çek → Nişan al (alevlerin tabanına) → Sıkıştır (mandal) → Süpür (sağa sola). ABC tipi en yaygın.", tip: "PASS = Pim-Nişan-Sık-Süpür", difficulty: 2 },
+  { id: "vt-032", categoryId: "vehicle-tech", title: "e-Call Sistemi", content: "Kaza durumunda araç otomatik olarak 112'yi arar. AB ülkelerinde ve Türkiye'de yeni araçlarda zorunlu hale geliyor.", tip: "Kaza = otomatik 112 çağrısı", difficulty: 2 },
+];
